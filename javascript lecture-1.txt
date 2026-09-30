@@ -1,0 +1,126 @@
+//first js code 
+console.log("learn java script");
+console.log("ilove js");
+console. log ("learnjava Script");
+
+//variables in js 
+name = "programing nmae java script";
+console.log(name);
+
+age = 24;
+console.log(age);
+
+price= 159.99;
+console.log(price);
+
+x= null;
+console.log(x);
+
+y=undefined;
+console.log(y);
+
+//data types in JS 
+//number
+let Age = 50;
+console.log(Age);
+
+let Price =100.50;
+console.log(price);
+
+//string
+let fullname ="jiya";
+console.log (fullname);
+
+//boolean
+isFollow = true;
+console.log(isFollow);
+
+//undefined
+let X;
+console.log(X);
+
+//null
+let Y=null;
+console.log(Y);
+
+//Bigint
+let Z=BigInt("123");
+console.groupCollapsed(Z);
+
+//Symbol
+let Q= Symbol("hello 1");
+console.log (Q);
+
+//non primtive type (objects ) like collection of the values 
+
+const Student = {
+    fullName:"niya",
+    Age:20,
+cgpa: 8.2,
+isPass :true
+};
+
+console.log(Student);
+console.log(Student.fullName);
+console.log(Student["fullName"]);
+console.log(Student.Age);
+console.log(Student["cgpa"]);
+console.log(Student["isPass"]);
+
+//if we want increase the value of age of the student 
+Student["Age"] =Student["Age"]+1;
+
+console.log(Student.Age);
+
+// if we want change student name 
+Student.fullName = "Niya Sharma ";
+
+console.log(Student.fullName);
+
+//we want chage const 's key value change not const varibe directly update for example  Shoeing error we cant update const direct value change 
+
+const Producitem = "iphone 15 ";
+console.log(Producitem );
+
+//const Product = "iphone 18 pro "
+//console.log(Product);
+
+//let's Practice 
+//q1. Create a Const object called "product"to store information shown in the picture > https://prnt.sc/gdRVTQ8GJd9M
+const  PRODUCT ={
+    title : "ball pam",
+rating : 4,
+offer:5,
+price:720
+};
+
+
+console.log(PRODUCT.title);
+console.log(PRODUCT["title"]);
+console.log(PRODUCT.rating);
+console.log(PRODUCT.offer);
+console.log(PRODUCT["price"]);
+console.log(PRODUCT.price);
+
+
+
+//note :how work number and string is java Sript 
+//1+2 =3 (numbers of added number showing total number )
+//but in string added same stringand number over there for examples>
+//"1"+"2"=12
+//"abc"+"123" =abc123 
+
+//let's Practice 
+//Q2.Create A const object called "profile" to store information shown in the picture . > https://prnt.sc/jhGWX8l8KQA2
+const profile ={
+    username: "@maanihitti",
+isFollow:false,
+followers:500,
+following:200
+};
+console.log(profile);
+console.log(profile.username);
+console.log(profile["isFollow"]);
+console.log(profile.followers);
+console.log(profile["username"]);
+console.log(profile.following);
