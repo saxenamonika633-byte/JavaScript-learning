@@ -1,0 +1,378 @@
+/* //comment in JS 
+//=================
+//Part of code which is not executed 
+1.// (double slesh )this is single line comment 
+2. /* this is multiple 
+line comment start with shlesh strt icon and end of the star slesh icons 
+*/
+//3. ctrl+/ comment all selcted line directly 
+
+
+//=================
+//Operators in JS
+//used to perform some operation on data 
+//Airthmatic operators > + ,-,*,/
+
+let a=5
+let b=2
+console.log("a + b =", a+b);
+console.log("a - b =", a-b);
+console.log("a * b =", a*b);
+console.log("a / b =", a/b);
+
+//modulus > % >  showing reminder value for example 5/2= reminder 1 > 2*24 > 5-4=1 reminder
+console.log("a % b =", a%b);
+
+//exponentiation > ** > means power > 2ki power 2= 
+//  (2**3) > 2*2*2= 8 
+console.log("a ** b =", a**b);
+
+//unary operators > increment and decrement we need only one value 
+a++; //a=a+1 >5+1=6
+console.log( "a++ =",a );
+console.log( "a++ =",a++ );
+a--;
+console.log("a = ",a);
+console.log("a = ",--a);
+
+//++a pre incremnt ,a++post increment 
+let x=2
+console.log("x = ", x);
+console.log("++x  =" ,++x );
+console.log("x =" ,x);
+//post increment 
+console.log("x++ =" ,x++);
+console.log("x =" ,x);
+console.log("++x =" ,++x);
+console.log("x =" ,x);
+
+//pre decrement 
+let k=5;
+console.log("k =",k);
+console.log("--k =",--k);
+//post decrement 
+console.log("k =",k);
+console.log("k-- =",k--);
+console.log("k =",k);
+
+
+
+//assignment operators (TO Assign the value of the variables )
+// =, +=, -=, *=, %=,**=
+// +=, a += 4 .a=a+4
+console.log("a = ", a );
+a=a+4;
+console.log("a += 4=", a );
+
+// -=,  a += 4 .a= a-4
+console.log("a = ", a );
+a -= 4;
+console.log("a -= 4 =", a );
+
+// *=, a *= 4 .a=a*4
+console.log("a = ", a );
+a=a*4;
+console.log("a *= 4 =", a );
+
+// *=, a /= 4 .a=a/4
+console.log("a = ", a );
+a=a/4;
+console.log("a /= 4 =", a );
+
+//  %=,  a %= 4 .a=a%4
+console.log("a = ", a );
+a=a%4;
+console.log("a %= 4 =", a );
+
+// **=, a **= 4 .a=a**4
+console.log("a = ", a );
+a=a**4;
+console.log("a **= 4 =", a );
+
+//comparison operators
+console.log("a = ",a ,"& b = ",b);
+//showing a=1 b=2
+console.log("a == b ",a == b);
+console.log("1 == 2 = ",a == b);
+a=a+4;
+b=b+1;
+//now a=5, b=3
+console.log("a = ",a ,"& b = ",b);
+console.log("5 != 3 = ",a != b);
+
+b=b+2;
+//now a=5, b=5
+console.log("a = ",a ,"& b = ",b);
+console.log("5 == 5 = ",a == b);
+console.log("5 != 5 = ",a != b);
+
+//in java script if we ass same number added as a string it campre and showing true value for example 
+let c="5"; //string 
+console.log("a == c >" ,"5 == 5 = ",a == c); 
+//output >> a == c > 5 == 5 =  true (so that in java script to use === for strict check values with datatype also 
+// equalto$type === , Not eualto % type !==)
+
+console.log("a === c >" ,"5 === 5 = ",a === c  , "because 5 is string value in c variable ");
+let d ="3"; //string  
+console.log("a !== d >" ,"5 !== 3 = ",a !== d); 
+console.log("a == d >" ,"5 == 3 = ",a == d);
+
+// > , >=, <, <= 
+console.log("a = ",a ,"& b = ",b);
+a=a;
+b=b-2;
+console.log("5 >3 = ",a >b);
+console.log("5 >=3 = ",a >=b);
+console.log("5 <3 = ",a <b);
+console.log("5 <=3 = ",a <=b);
+b=b+2;
+console.log("5 >=5 = ",a >=b);
+console.log("5 <=5 = ",a <=b);
+
+//Logical operators 
+// && = AND → Both conditions must be true.
+console.log("a = ",a ,"& b = ",b);
+console.log("a > b && a==b  =" ,a > b && a==b );
+console.log("a == b && a==b  =" ,a == b && a==b );
+a=a+2;
+console.log("a > b && a==b  =" ,a > b && a==b );
+
+// || = OR → At least one condition must be true.
+console.log("a = ",a ,"& b = ",b);
+console.log("a > b || a==b  =" ,a > b || a==b );
+console.log("a == b || a<b  =" ,a == b || a<b );
+a=a+-2;
+console.log("a > b || a==b  =" ,a > b || a==b );
+
+// ! = NOT → Reverses the condition (true becomes false, and false becomes true)
+console.log("a = ",a ,"& b = ",b);
+console.log("! a>b  =" ,! a > b  );
+console.log(" ! a==b  =" , ! a==b );
+a=a+2;
+console.log("! a < b =" ,! a<b );
+
+//condition Statements > 
+// condition 1. if → Executes code when a condition is true
+// example 1.
+let age =18;
+if (age>=18){
+  console.log ("you can vote");
+}
+
+if (age<18){
+    console.log("you can't vote ");
+}
+//example 2. 
+let mode = "dark";
+let color;
+if (mode === "dark") {
+    color= "black";
+}
+if (mode === "light"){
+    color= "white";
+}
+
+console.log(color);
+// condition 2. if...else → Executes one block (codes) if true, otherwise another block (codes).
+let Mode = "white";
+
+if (Mode === "dark") {
+    color= "black";
+}
+else{
+    color= "white";
+}
+console.log(color);
+
+//example 2
+let AGE= 16;
+let right;
+if (AGE>=18){
+    (right="you can vote");
+}
+else{
+    (right="you can not vote");
+}
+console.log (right);
+
+//Example 3. 
+let number =22;
+let numbertype;
+if (number%2===0){(numbertype="number is even");
+
+}
+else 
+{(numbertype="number is odd");
+}
+console.log (number, numbertype);
+
+//also
+let num=7;
+if (num%2===0){
+    console.log(num, "is even number");
+}
+else{
+ console.log(num, "is odd number");
+}   
+
+//syntex >rules // examples  > end line add;, after if add condition , else not working without if etc.
+//conditonal statement 3.
+//if...else if...else → Checks multiple conditions one by one.
+
+let bg= "blue"; 
+let color1;
+
+if (bg === "dark") {
+    color1= "black";
+}
+
+else if  
+    (bg === "light"){
+    color1= "white";
+}
+else if (bg==="pink"){
+    color1="pink"
+}
+else 
+    (color1= "silver");{
+}
+console.log(color1);
+
+//example 3. 
+let mark =70;
+if (mark >=90){
+    console.log("Grade A+");
+}
+else if (mark>75){
+    console.log("Grade A");
+}
+else if  (mark>60){
+    console.log("Grade B");
+}
+else if
+ (mark>40){
+    console.log("Grade C ");
+}
+else {console .log("fail");
+
+}
+
+// Ternary Operators
+let age1 = 25;
+let result= age1>=18? "adult" : "not adult";
+console.log(result);
+
+//also
+Age1= 16;
+Age1>=18? console.log("adult"): console.log("not adult");
+
+
+//The switch statement is used when you want to compare one value with multiple possible values.
+// //switch > 	Starts the switch statement
+// case> 	Defines a possible matching value
+// break	> Stops execution after a match
+// default	> Runs when no case matches
+let day = 3;
+
+switch (day) {
+
+    case 1:
+        console.log("Monday");
+        break;
+
+    case 2:
+        console.log("Tuesday");
+        break;
+
+    case 3:
+        console.log("Wednesday");
+        break;
+
+    case 4:
+        console.log("Thursday");
+        break;
+
+        case 5:
+        console.log("friday");
+
+        case 6:
+        console.log("saturdayy");
+
+        case 7:
+        console.log("sunday");
+        
+
+    default:
+        console.log("Invalid day");
+}
+
+//example 2
+let score=60;
+let Grade;
+switch(true){
+    case score >=90:
+    Grade="A+";
+break;
+    case score >=75:
+    Grade="A";
+    break;
+
+    case score >=60:
+    Grade="B";
+    break;
+
+    case score >=40:
+    Grade ="C";
+    break;
+  default:
+    Grade="fail";
+    break;
+}
+console.log(Grade);
+    //Very important: break
+   // Without break:JavaScript continues to the next cases after finding a match for exmple add day 5 in above code. 
+
+//let practice > 
+//examples
+alert ("hello");  //one time popup 
+
+//prompt("Hello! Enter your name "); popup with input box 
+let yourname = prompt("Hello! Please Enter your name ");
+ console.log("yourname is", yourname);
+
+
+//Q1. Get user toinput a number using prompt ("Enter anumber.check if the number is multiple of5 or not?https://prnt.sc/pjL5IbQ38q1Z
+
+
+let numb =prompt ("Enter a number");{
+    if (numb%5===0){
+        console.log(numb,"number is multiple of 5");
+    }
+    else {
+      console.log(numb,"number is not  multiple of 5");  
+    }
+}
+
+//Q2.Write a code which can give to students according to the their scores
+// 90-100>A , 70-89>B, 60-69>C, 50-59>D, 0-49>F
+// https://prnt.sc/0odfWlc6LU7p
+//let Score=87; 
+let Score=prompt("Enter your Score (0-100)");
+let GRade;
+if (Score>=90 && Score<=100){
+    console.log(Score," Grade A");
+}
+else if (Score>=70 && Score<=89){
+    console.log(Score," Grade B");
+}
+else if (Score>=60 && Score<=69){
+    console.log(Score," Grade C");
+}
+else if (Score>=50 && Score<=59){
+    console.log(Score," Grade D");
+}
+else if (Score>=0 && Score<=49){
+    console.log(Score," Grade F");}
+else{
+    console.log(Score," Invalid Score ");
+}
